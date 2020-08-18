@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+    <style>
+    html {margin:0;
+          padding:0;
+          background-color:  brown;
+    }
+    body {width:90%;
+          margin:0 auto;
+          font: 100% Arial, Helvetica, sans-serif;
+          border-bottom: solid gold 10px;
+          background-color: white;
+          
+    }
+     h1 {font-family:'Trebuchet MS', 'Lucida Sans Unicode', 
+                    'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+        font-size: 2em;
+        background-color: rgb(0, 255, 128); 
+        color: blue;
+        margin: 200% 0. 4em;
+        padding: 10px 10px;
+        text-shadow: 10px 10px 5px  rgba(102, 33, 33, 0.6);
+        border-radius: 100px;
+        margin-top: 30px;
+        ;
+        -webkit-animation: header 30s infinite alternate;
+        -Moz-animation: header 30s infinite alternate;
+        -o-animation: header 30s infinite alternate;
+        animation: header 30s infinite alternate;
+
+    }
+        p {line-height: 1.7;
+       width: 100%;
+       margin: 0;
+       margin-bottom: 1em;
+       padding-left: 0;
+       color: green;
+       font-size: 130%;
+       text-indent:2px;
+    }
+    .main {width:100%; 
+           height:100%;
+           }
+    nav   {width:90%;
+           height: 50px;
+           background-color:sandybrown;
+           border-bottom: 5px solid brown;
+           position: fixed;
+           top: 0px;
+           left:5%
+          }
+    nav ul{float: right;
+                margin-right: 30px;
+                height: 40px;
+          }        
+    nav ul li { list-style-type: none;
+                    display: inline;
+                    margin-right: 2.5em;
+                    line-height: 20px;     
+                    transition: 0.8s all;
+                    padding-top: 10px;
+                    padding-bottom: 10px ;
+                    color: black;
+                    transition-property: background;
+                    transition-duration:2s
+              }
+    nav ul li:hover {background-color:#916A31;
+                     border-radius: 10px 0 10px 0;
+                     border-bottom: 2px solid white
+                    }
+    nav ul li a {text-decoration: none;
+                     color: white;                  
+        }
+    .vid {margin-left:5%; 
+             width: 40%; 
+             height: 10%
+             }
+    blockquote{background-color:sandybrown;
+                   color:black;
+                   font-size:110%;
+                   width: 90%;
+                   font-family:cursive;
+                   font-weight: bolder;
+                   letter-spacing: 1.2px;
+                   padding:10px;
+                   border-radius: 30px 0px 15px 10px;
+                   background: -moz-linear-gradient(top, sandybrown 0%, white 100%);
+                   background: -webkit-linear-gradient(left, sandybrown 0%, white 100%);
+                   background: -o-linear-gradient(top, sandybrown 0%, white 100%);
+                   background: linear-gradient(top, sandybrown 0%, white 100%);
+                   box-shadow: rgb(218, 110, 110) 5px 5px 10px 3px}
+    blockquote footer{background-color:khaki;
+               padding-left:70%;
+               font-size: 120%;
+               font-family:'Times New Roman', Times, serif;
+               font-style:normal;
+                     }
+    .gototop{float:left;
+                 margin-left:  5px;
+                 padding-bottom: 0;
+                 padding-top: 0;
+                 color:burlywood}
+    article {padding-left: 50px;
+             padding-right: 50px}
+    a {color: brown;
+        }
+    a:hover {color: black;
+            }
+    article a {-webkit-transition: all 0.6s ease-out;
+               -moz-transition: all 0.6s ease-out;
+               -o-transition: all 0.6s ease-out;
+               transition: all 0.6s ease-out;
+                }
+    article a:hover {-webkit-transform: scaleX(1.2);
+                     -moz-transform: scaleX(1.2);
+                     -o-transform: scaleX(1.2);
+                     transform: scaleX(1.2)
+                    }
+    a:active{background:sandybrown;
+    }
+    img.style{border-color: red;
+              border-radius:10px;
+              }
+    h3 { color:blueviolet}
+    .ul{background-color: bisque;
+        width: 300px;
+         font-size:120%;
+         padding-right: 2%;
+         list-style-type: circle;     
+         }
+   /* aside:hover{transform:skewX(10deg)
+               }*/
+    .capital::first-letter{font-size: 3em;
+                           font-family: verdana;
+                           margin: 0 2px 0 0;
+                           line-height: .7;
+                           float:left
+                           }
+    footer[class="footer"]{background-color: rgb(56, 39, 39);
+                          text-align:center;
+                          color:blanchedalmond;
+                          height: 4em;
+                          font-size: 120%;
+                          line-height: 60px;
+                          margin-left: 0 
+                          }
+    #try li:nth-child(even) {background-color: burlywood;
+                             border-bottom: 2px solid white;
+                             margin-bottom: 10px
+                            } 
+    .hover li:nth-child(odd) {border-bottom: 2px solid white;
+                              margin-bottom: 10px
+                             }
+    .author{background:darkkhaki;
+            color:white;
+            position: fixed;
+            top: 105px;
+            right: 30px;
+            border-radius: 5px;
+            
+            }
+    .author a{color:white;
+              text-decoration: none;
+              }
+    .author a:hover{color:darkslateblue;
+                    background:burlywood;
+                    border-radius: 15px;
+                    transition-duration: 2s
+                    }              
+    img {border-radius: 15px
+        }
+    video {border-radius: 20px
+          }
+    a:focus{outline: none
+           }
+    .home {cursor: default;
+           background-color:darkkhaki;
+           border-radius: 10px 0 10px 0;
+           border-bottom: 2px solid white;
+           padding-top: 15px;
+           padding-bottom: 10px;
+           }
+    #imgimg:hover{transform: translateX(400px);
+                  transition: all 2s cubic-bezier(0.175, 0.885, 0.32, 1.275)
+                 } 
+    @-webkit-keyframes header {
+        0% {background-color:rgb(0, 255, 128)}
+        25% {background-color: white}
+        50% {background-color: bisque }
+        100% {background-color:hotpink}
+    }
+    @-Moz-keyframes header {
+        0% {background-color:rgb(0, 255, 128)}
+        25% {background-color: white}
+        50% {background-color: bisque }
+        100% {background-color:hotpink}
+    }
+    @-o-keyframes header {
+        0% {background-color:rgb(0, 255, 128)}
+        25% {background-color: white}
+        50% {background-color: bisque }
+        100% {background-color:hotpink}
+    }
+    @keyframes header {
+        0% {background-color:rgb(0, 255, 128)}
+        25% {background-color: white}
+        50% {background-color: bisque }
+        100% {background-color:hotpink}
+    }
+
+    </style>
+    <script>
+        function pic(){
+            document.getElementById("Pics").style.height = "35%";
+            document.getElementById("Pics").style.width = "35%";
+        }
+    </script>
+    <head>
+         <id="top" />
+        <title> Football </title>
+        <meta charset="UTF-8" />
+        <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![End if]-->
+    </head>
+    <body >
+            <div class="main">
+                    <nav>
+                            <img src="img/images (10).jpeg" width= "200" height="50" />
+                        <ul>
+                       <li> <a href=""title="click" class="home">HOME</a></li>
+                       <li><a href="file:///C:/Users/OLATUNJI%20PETER/Documents/ron.html" title="click">IMAGES</a></li>
+                       <LI><a href=""title="click"> PAGE LAYOUT</a></LI>
+                       <li><a href="" title="click">LINKS</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <br />
+         <h1> <marquee>LIVING FOOTBALL</marquee></h1>
+        <article>
+        <figure>
+        <img src="img/8a17ee439dc663c16d9a3b49f6a72b26.jpg"
+         title= "Christiano Ronaldo" border="10px" width="20%" class="style" align="left"/>
+         <img src="img/Ronad.jpeg" title="Cristiano Ronaldo" border="6px" width="20%" class="style" class="trans"/> 
+        </figure>
+         <br />
+         <br />
+         <div  >
+         <a href="#cris" > The boy named CHRISTIANO RONALDO</a>
+        <br />
+        <br />
+        <a href="#style">Cristiano Ronaldo as a professional footballer</a> 
+        <br />
+        <br />
+        <a href="#shop">Cristiano at 19, skills and dribbles  (Video).</a>
+        <br />
+        <br />
+        <a href="#Tip">Cristiano Ronaldo's Awards</a>
+        <br />
+        <br />
+        <a href="#shift">Ronaldo's Social Life</a>
+        <br />
+        <br />
+        <a href="#ship">Quote's about Ronaldo</a>
+    </div>
+        <h2 Align="center" style="color:blueviolet"> THE LIFE STORY OF CRISTIANO RONALDO</h2>  
+        <p>
+            &nbsp; &nbsp; &nbsp; &nbsp; <I><strong>CRISTIANO RONALDO</strong></i> popularly known and called as 
+            CR7 is one of the greatest footballer on the planet, (if not the greatest), but as for me he is the greatest. 
+            Why I acknowledge him as the greatest is because of his winning mentality, his attitude towards what he loves, 
+            and his confidence. The three attributes seperates him from the remaining footballers. 
+            So, we will be talking about how he became  what he is today.
+        </p>
+        <ul>
+         <li> <h3 Id= "cris">  The boy named CHRISTIANO RONALDO</h3></li>
+        </ul>
+         <figure>
+        <img src="img/images (9).jpeg" title="Ronaldo" border="5px" width="40%" style="float:left; margin-right: 10px0" onresize="pics()"
+        />
+        </figure>
+         <P class="capital">
+                Ronaldo is a Portuguese, born on the 5th of february in the year 1985,
+                 in Medeira, to Jose Dinis Aveiro. 
+                His father was a garderner, while his mother was a cook. He is the youngest child among the 
+                four children his parent gave birth to; others being a son and two daughters.
+                He was raised a catholic in a poor family at the funchal civil parish of santo Antonio, 
+                he was named by his father after the then U S president [Ronald Reagan].
+         </P>
+         <p>
+             It was heard that he was expelled from school, for throwing a chair at his teacher because the Teacher told 
+             him he cannot make it with football. This attitude of his prompted his parents action to let him face 
+             football squarely. "we were eight, nine years", former team-mate Ricardo once said. "And at that time, 
+             Ronaldo was already a great player."
+             <br />
+              <br />
+             "What I remember about him is that he was a humble kid. And when he didn't have the ball, he cried. When the 
+             team-mates fought, he cried. But he was already a good player. He was faster than average, he already scored a 
+             lot of goals and he had great dribbling skills." 
+             <br />
+             "Cristiano really liked winning", santos added "When that didn't happen, Ronaldo cried. So much that he 
+             was nicknamed 'crybaby' ".
+         </p>
+         <p>
+                &nbsp; &nbsp; &nbsp; &nbsp; Pilar played with Cristiano in the youth teams at Sporting and also at junior level for Portugal - 
+                and he says Ronaldo's desire to improve set him apart from other players.
+                <br />
+                <br />
+                "I always thought that we had several quality players in the Sporting academy," he said.
+                 "But that Ronaldo was different because of all the work he put in - not so much during the training sessions,
+                  but after the sessions. He would always stay and practice for an extra half an hour on the areas he had most 
+                  difficulties. 
+                  <br />
+                <br />
+                "When I arrived at the age of 13, he had an authority about him that was much greater than the 
+                rest of his team-mates. The way he trained, the way he motivated his team-mates, the way he corrected them, 
+                his will to win, his will to impress, was superior to all the others.
+                <br />
+                <br/>
+                "We all wanted to play football and to please our parents. But not him - 
+                his dream was not only to please his family, but everyone who watched him."
+             
+         </p>
+         <ul>
+         <li><h3 id="style">Cristiano Ronaldo as a professional footballer</h3></li>
+        </ul>
+         <figure>
+         <img src="img/ronal.jpg"  border="10" width="20%" id="imgimg:hover"/>
+        </figure>
+         <p>
+            &nbsp; &nbsp; &nbsp; &nbsp; In the year 2001 after having a fantastic stint with
+            Nacianal de liha da Madeira club, Ronaldo was signed by<a href=""> Sporting Portugal</a>,he was just 16 at that time. 
+            He was immediately spotted by the <a href="">Manchester United</a> players when manchester united played 
+            a pre-season game with Sporting.The manchester players were amazed by his <i><strong>football sense</strong></i>,
+            at that verytender age, and the way he show case his skills. They liked him so much that asked theirmanager 
+            Sir Alex Ferguson to sign Ronaldo and that ‘s exactly what he did.  
+            Ronaldo was signed by Manchester United for 12 million pounds, which was a record for a player of his age. 
+            Ronaldo responded to this SignUp he helped Manchester United win three English Premier League titles by
+            scoring 42 goals in the 2008 season.
+            Upon his arrival at Manchester United, Cristiano was given the Iconic jersey number Seven (7), which
+            had been worn by some icons like Beckham, Contana e.t.c. 
+            Ronaldo played for united for seven seasons and within those season, he scored a total of <mark>118 goals
+            </mark> in<b> 292 appearances</b> for Manchester United, helping them to win a champions league, and 
+            3 consecutive premier leagues.<i><b> 84 of Ronaldo's goals was scored in the premier league.</b></i>
+            <br /> 
+            &nbsp; &nbsp; &nbsp; &nbsp; In the year 2009 after his commitment to the club (Manchester United) came under a scanner 
+            Manchester United sold Ronaldo for a record of £80 million to the Spanish Football Club, <a href="">
+            Real Madrid.</a>
+            Real madrid was a club, Ronaldo has always wanted to play for, and his scoring prowess continued 
+            A tail player at 6 feet 1 inch (1.85 meters). Ronaldo was a formidable athlete on the pitch. Originally
+            a right-winger, he developed into a forward with a free-reined attaking style. He was able to mesmerize 
+            opponents with a sleight of foot that made sufficient space for openings in opposing defence.
+            Ronaldo helped Madrid win alot of trophies, and along the way he was tagged the nickname 
+            <strong>Mr <a href=""> Champions League</a></strong> for his goal scoring form in the competition every season.
+            He is also the highest goalscorer in the history of Real Madrid, scoring a total number of <mark>451 goals
+            </mark>  in <b>429 matches</b> and sharing the goals among different competitions. He netted<b> <i>312 in laliga, 22 in copa del ray, four in
+            the super copa de Espana, two in the European Super Cup, Six int the club World cup and 105 in the champions 
+            league. </i> </b>The 105 goals scored in Champions league make him become the highest goalscorer of the 
+            competition. <br>
+            &nbsp; &nbsp; &nbsp; &nbsp;Cristiano, is the all time top goalscorer for the portugal national football team 
+            and known for breaking records everywhere he is, he has the most international goals among currently active 
+            players. As of october 2019, he has scored <mark>95 goals</mark> in <b>162 appearances</b> since his debut at age 18
+            on 20 August 2003.
+         </p>
+         <ul>
+         <li><h3 id="shop"> Here is a video of Ronaldo at 19 <b>ENJOY.</b></h3></li>
+        </ul>
+            <figure> 
+            <video id="video1"  class="vid"  controls loop  >
+                <source src="img/videoplayback.webm" type="video/webm" />
+            </video>
+            </figure>
+            <form>
+                <input type= "button" value="Play"  onclick ="play()" />
+                <input type= "button" value="Pause"  onclick ="pause()" />
+                <input type= "button" value="Rewind"  onclick ="rewind()" />
+            </form>
+
+            <p>
+                &nbsp; &nbsp; &nbsp; &nbsp; During Ronaldo's stay at both Real madrid and Manchester united, Ronaldo
+                was able to break and create records, he also won 
+                alot of awards, to him for his excellent works on and off the pitch. The awards are as follows
+         </p>
+         <p>
+             <ul>
+             <li><h3 id= "Tip">Cristiano Ronaldo's award</h3></li>
+            </ul>
+            <figure>
+                <img src="img/rol.jfif" title="Ronaldo"/> <br /> 
+             </figure>
+         </p>
+         <aside id="try" class="hover">
+                <ul class="ul">
+                 <li>Golden Ball (2008)</li>
+                 <li>Golden Ball (2013) </li>
+                 <li>Golden Ball (2014)</li>
+                 <li>Golden Ball (2016)</li>
+                 <li>Golden Ball (2017)</li>
+                 <li>European Golden Shoe (2008)</li>
+                 <li>European Golden Shoe (2011)</li>
+                 <li>European Golden Shoe (2014)</li>
+                 <li>European Golden Shoe (2015)</li>
+                 <li>The best FIFA men's player (2007)</li>
+                 <li>The best FIFA men's player (2016)</li>
+                 <li>The best FIFA men's player (2017)</li>
+                 <strong>And many more</strong>
+             </ul>
+         </aside>>
+         <ul>
+             <li><h3 id="shift">Ronaldo's Social Life</h3></li>
+        </ul>
+        <p>
+                &nbsp; &nbsp; &nbsp; &nbsp; Ronaldo was one of the most well-known sports stars off the field, and numerous
+                studies of athletes popularity showed that he was the most beloved athlete in the world. His extreme 
+                popularity made Ronaldo one of the highest paid endorsers in sports history, and in Novemmber 2016 he 
+                became the third person to earn a lifetime contract from the sportswear company Nike, the other's being
+                <a href="">basketball</a> superstars <b>Micheal Jordan</b> and <b>Lebron James</b>. Moreover, he established 
+                his own successful <a href="">"CR7"</a> brand of products that included shoes, underwears, cloths and fragrances.
+               
+        </p>
+                <figure>
+                <img src="img/brand.jpeg" Title="Ronaldo brand" width="70%x"/>
+                </figure>
+            <p>
+                &nbsp; &nbsp; &nbsp; &nbsp;Ronaldo's immense marketability was at the center of a legal issue that arose in 
+                june 2017. That month prosecutors filled a lawsuit that accused Ronaldo of defrauding the Spanish 
+                government of $16.5 million by hiding his image-rights income in Spain from 2011 to 2014. He was accused
+                of having underestimated the income he earned from the sale and licensing of his image rights and the 
+                accompanying tax obligations, but Ronaldo denied all allegations. However, in June 2018 he accepted a 
+                suspended two-year prison sentence and agreed to pay $21.8 million to the spanish government to settle 
+                the case.
+        </p>
+        <figure>
+            <img src="img/images (12).jpeg" width="30%" height="40%" Style="float:right; margin-left:10px" 
+            title= "Ronaldo's family" />
+        </figure>
+            <p>
+            Ronaldo is a father of four, and he has a wife-esque girlfriend<b></b> (Georgina Rodriquez)</b>.
+            Georgina was a hardworking lady who is determined to work her way out of the poor background was born into. 
+            She, therfore started working as a waitress in her hometown while still a teenager. She later got to work
+            as a live-in domestic worker and eventually left Spain fo the UK when the family for whom she worked relocated 
+            to Bristol, England. While in England, Goergina studied English in London. She subsequently worked as a sales
+            girl in a Gucci shop in Madrid.   &nbsp; &nbsp; Ronaldo and Georgina met back in June 2016 in Madrid. While 
+            Some sources say that Ronaldo first spoteed and cast an interested glance at Rodriguez in the VIP corner at a 
+            Dolce & Gabanna function, Others hold that duo met and exchanged numbers when Cristiano came to pick up
+            summer cloths at the Gucci shop where Georgina then worked an an attendent.</p>
+            <p>Whatever be the case, the point is that they started off a relationship sooner or later. Ronaldo later 
+                proposed to the Spanish beauty late in 2018 after two years of dating. They are now engaged and fans
+                can't wait to see them joined together. 
+            </p>
+            
+            <p>Ronaldo also has an elder brother <b>(Hugo Aveiro)</b>, and two sisters <b>(Elena Aveiro)</b> and 
+            <b>(Liliana catia)</b>. The name's of Cristiano Ronaldo Children are 
+            :<br /
+            ><b> (Cristiano Ronaldo jr "son")</b> -
+                born by a surrogate, the eldest of Ronaldo's children.The kid already a skilled footballer who scored 
+                a whopping seven goals on his juventus dubut, when is fatherleft Madrid and crossed to the Juventus Side.  
+                The twins <b>(Mateo Ronaldo "son" and Eva Ronaldo "daughter") </b> - born via 
+                surrogate and also <b>(Alana Martin Ronaldo "son")</b> - born via girlfriend Georgina.
+            </p>
+           <li><h3 id ="ship">Here are some Legendary quotes about Cristiano</h3></li>
+
+        </article>
+
+        <blockquote>
+            <strong>"We've had some great players at this club in my 20 years, but he's up with the best." -</strong>
+            <footer>Sir Alex Ferguson</footer>
+        </blockquote>
+        <blockquote>
+            <strong>"(Ronaldo) is always there scoring goals in all the games and taking part in his club and national 
+                side. He has been doing that for many years and whether he is at his peak or a bit below it makes no sense." -
+            </strong>
+            <footer> Lionel Messi</footer>
+        </blockquote>
+        <blockquote>
+            <strong>"There have been a few players described as the new George Best Over the years, but this is the first time
+                it's been a compliment to me." -
+            </strong>
+            <footer> George Best</footer>
+        </blockquote>
+        <blockquote>
+                <strong>"He has magic in his boots. The first thing you notice about him is that he is incredibly quick
+                     and very, very powerful for such a young man."
+                     <br><br>
+                    "He has a great, close control and his technique is excellent. He believes he can do anything with the 
+                     ball, and that confidence makes him special indeed". -
+                    
+                </strong>
+                <footer>Eusebio </footer>
+        </blockquote>
+        <blockquote>
+                <strong>
+                        "He (Ronaldo) does things i have never seen from any other player and it really is marvellous
+                        to watch. It takes a great player to grab the bull by the horn and make things happen, but he has
+                        done it repeatedly." - 
+                </strong>
+               <footer>Sir Bobby Charlton</footer>   
+         </blockquote>
+         <blockquote>
+                <strong>
+                    "Ronaldo can do whatever he wants as a soccer player. There are some things Ronaldo can do with a 
+                    football that makes me touch my head and wonder how on earth he did it." -
+                </strong>
+               <footer> Luis Figo</footer>
+        </blockquote>
+        <blockquote>
+                <strong>
+                        " He is the best. The best in the World, yes. Probably the best ever. I saw Maradona a couple 
+                        of times. I never saw Pele." <br /> <br />  
+                        "But Cristiano is amazing. This man is the best.... Cristiano is a goal machine. He is an 
+                        incredible player. He is lize Zidane, there will never be another Ronaldo." -
+               </strong>   
+               <footer>Jose Mourinho</footer>
+        </blockquote>
+        <blockquote>
+                <strong>     
+                        "I have never played against anybody like that in my life and I was pleased to be taken off" -
+                </strong>
+                <footer> Robbie Ryan </footer>
+        </blockquote>
+        <blockquote>
+                <strong>                
+                     "When you play with Ronaldo on your team, you are already 1-0 up" -
+               </strong>
+               <footer>Zinedine Zidane </footer>   
+        </blockquote>
+        
+               <footer class="footer">
+                <a href="#top" class="gototop">Go to Top</a>                                                                                   
+                Copyright &copy<script>document.write(new Date().getFullYear()) </script> All Rights 
+                Reserved Developed  0 by Peteru_u 
+        </footer>
+        <div class="author"><a href="file:///C:/Users/OLATUNJI%20PETER/Documents/author.htm" 
+            title="Know more about the author">About the author </a></div>
+       
+    </body> 
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Ronaldo's images
+        </title>
+        <meta charset="UTF-8">
+    </head>
+    <style>
+        body{width: 100%;
+            margin: 0 auto;
+            }
+        .pictures {background: brown;
+                    background: -moz-linear-gradient(bottom, brown 0%, white 100%) ;
+                    background: -webkit-linear-gradient(bottom, brown 0%, white 100%);
+                    border-radius: 25px;
+                    width: 90%;
+                    margin: 0 auto;
+                    padding-right: 15px;
+                    padding-left:50px
+    }
+        img {border-radius: 15px 5px 15px 10px;
+        width: 30%;
+        height: 300px;
+        margin: 0 auto;
+        padding: 5px 10px;
+        -webkit-transition: all  0.9s ease-in-out;
+        -Moz-transition: all  0.9s ease-in-out;
+        -o-transition: all  0.9s ease-in-out;
+        transition: all  0.9s ease-in-out;
+        }
+        .img {padding-top:30px}
+        @-webkit-keyframes hover{ 
+            0%{opacity: 1}
+            100%{opacity:0;
+            -webkit-transform: scale3d(5,5,5);}
+        }
+        @-moz-keyframes hover{ 
+            0%{opacity: 1}
+            100%{opacity:0;
+            -moz-transform: scale3d(5,5,5);}}
+            @-o-keyframes hover{ 
+            0%{opacity: 1}
+            100%{opacity:0;
+            -o-transform: scale3d(5,5,5);}}
+            @keyframes hover{ 
+            0%{opacity: 1}
+            100%{opacity:0;
+            transform: scale3d(5,5,5);}}
+
+        a:hover img{-webkit-transform:scale(1.1);
+                    -moz-transform:scale(1.1);
+                    -o-transform:scale(1.1);
+                    transform:scale(1.1);
+                    border-radius: 20%;
+                    -webkit-animation: hover 0.6s ease-in-out;
+                    -moz-animation: hover 0.6s ease-in-out;
+                    -o-animation: hover 0.6s ease-in-out;
+                    animation: hover 0.6s ease-in-out  }
+    </style>
+    <body>
+        <div class="pictures">
+          <a href="img/8a17ee439dc663c16d9a3b49f6a72b26.jpg" download="my picture"> <img src="img/8a17ee439dc663c16d9a3b49f6a72b26.jpg" title="Ronaldo" ></a>
+          <a href=""><img src="img/download.jfif" title="Ronaldo" ></a>
+          <a href=""> <img src="img/images (7).jpeg" title="Ronaldo"></a>
+          <a href=""> <img src="img/gbron.jfif" title ="Ronaldo's shirt" ></a>
+          <a href=""> <img src="img/images (9).jpeg" title ="Ronaldo"></a>
+          <a href="">  <img src="img/images (12).jpeg" title ="Ronaldo"></a>
+          <a href=""><img src="img/ronad.jpeg" title="Ronaldo"></a>
+          <a href="">  <img src="img/rol.jfif" title="Ronaldo"></a>
+          <a href=""> <img src="img/ronal.jpg" title="Ronaldo"></a>
+          <a href=""><img src="img/brand.jpeg" title="Ronaldo"></a>
+          <a href=""><img src="img/images (8).jpeg" title="Ronaldo"></a>
+        </div>        
+    </body>
+</html>
